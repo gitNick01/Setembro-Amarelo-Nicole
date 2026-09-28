@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mensagens - Escreva e Leia</title>
+    <link rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon/apple-touch-icon.png">
+
+    <link rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32/favicon-32x32.png">
+
+    <link rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16/favicon-16x16.png">
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Georgia, serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #fff;
+            line-height: 1.6;
+        }
+        /*  RESPONSIVIDADE GERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+    </style>
+</head>
+
+<body>   
+   <!-- CABEÇALHO -->
+    <header style="
+        background-color: #f2d876;
+        padding: 15px 0;
+        text-align: center;
+    ">
+
+        <h1 style="
+            color: #90992c;
+            font-size: 24px;
+            font-weight: normal;
+        ">
+            Seja bem vindo!
+        </h1>
+
+    </header>
+
+    <!-- NAVEGAÇÃO -->
+    <nav style="
+        background-color: #f2d876;
+        padding: 12px 0;
+        text-align: center;
+    ">
+
+        <a href="cantinho.html" style="
+            color: #2c2c2c;
+            margin: 0 18px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 500;
+        ">
+            CANTINHO
+        </a>
+
+        <a href="pausa.html" style="
+            color: #2c2c2c;
+            margin: 0 18px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 500;
+        ">
+            UMA PAUSA
+        </a>
+
+        <a href="escrevaeleia.html" style="
+            color: #2c2c2c;
+            margin: 0 18px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 500;
+        ">
+            MENSAGENS
+        </a>
+
+        <a href="mural.html" style="
+            color: #2c2c2c;
+            margin: 0 18px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 500;
+        ">
+            NOSSO MURAL
+        </a>
+
+        <a href="contato.html" style="
+            color: #2c2c2c;
+            margin: 0 18px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 500;
+        ">
+            ENTRE NÓS
+        </a>
+        <a href="conscientizacao.html" style="
+            color: #2c2c2c;
+            margin: 0 18px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 500;
+        ">
+            CONSIENTIZAÇÃO
+        </a>
+
+   </nav>
+    <!-- TELA 1 - CAIXA DE MENSAGENS -->
+    <section id="caixa-mensagens" style="
+        margin-top: 100px;
+        padding: 60px 20px;
+        background-color: #fff3cd;
+        min-height: 500px;
+        position: relative;
+        overflow: hidden;
+    ">
+        <!-- IMAGEM DECORATIVA - ESQUERDA -->
+
+        <img src="/imagens/ramo-azul (2).png"
+             alt="Ramo azul"
+             style="
+                position: absolute;
+                top: 300px;
+                left: -80px;
+                width: 300px;
+                height: auto;
+                z-index: 1;
+                pointer-events: none;
+             ">
+        <!-- IMAGEM DECORATIVA - DIREITA -->
+
+        <img src="/imagens/buque.png"
+             alt="Buquê de flores secas"
+             style="
+                position: absolute;
+                bottom: 0;
+                right: 20px;
+                width: 300px;
+                height: auto;
+                z-index: 1;
+                pointer-events: none;
+             ">
+
+        <!-- CONTEÚDO PRINCIPAL -->
+
+        <div style="
+            max-width: 1100px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        ">
+     <!-- TEXTO ESQUERDO -->
+
+            <div style="
+                float: left;
+                width: 30%;
+                padding-top: 30px;
+            ">
+
+                <h2 style="
+                    font-size: 3rem;
+                    color: #2b2b2b;
+                    line-height: 1.1;
+                    margin: 0;
+                    font-weight: bold;
+                ">
+
+                    O que você<br>
+                    gostaria<br>
+                    de ouvir<br>
+                    hoje?
+
+                </h2>
+
+            </div>
+            <!-- FORMULÁRIO CENTRAL -->
+
+            <div style="
+                float: left;
+                width: 40%;
+                padding: 0 20px;
+            ">
+                <div style="
+                    background-color: #7a9263;
+                    border-radius: 16px;
+                    padding: 20px;
+                ">
+
+
+                    <label style="
+                        font-size: 1.3rem;
+                        color: #2b2b2b;
+                        font-weight: 500;
+                        display: block;
+                        margin-bottom: 10px;
+                    ">
+
+                        DIGITE SUA MENSAGEM:
+
+                    </label>
+
+
+
+                    <textarea style="
+                        width: 100%;
+                        height: 180px;
+                        background-color: #b8c29a;
+                        border: none;
+                        border-radius: 12px;
+                        padding: 15px;
+                        font-size: 1rem;
+                        color: #2b2b2b;
+                        box-sizing: border-box;
+                        resize: none;
+                    "></textarea>
+
+
+
+                    <button style="
+                        width: 60%;
+                        margin: 20px auto 0;
+                        display: block;
+                        background-color: #f0ebe0;
+                        border: none;
+                        border-radius: 20px;
+                        padding: 10px;
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        color: #2b2b2b;
+                        cursor: pointer;
+                    ">
+
+                        ENVIAR
+
+                    </button>
+
+                </div>
+                <p style="
+                    text-align: center;
+                    margin-top: 25px;
+                    font-size: 1rem;
+                    color: #2b2b2b;
+                    line-height: 1.5;
+                ">
+
+                    VOCÊ TAMBÉM PODE SE INSPIRAR NAS MENSAGENS DE<br>
+                    OUTRAS PESSOAS....<br>
+
+                    <span style="
+                        display: inline-block;
+                        margin-top: 8px;
+                    ">
+                        ▼
+                    </span>
+
+                </p>
+
+            </div>
+            <!-- HASHTAGS -->
+
+            <div style="
+                float: right;
+                width: 25%;
+                padding-top: 60px;
+                text-align: center;
+            ">
+
+                <p style="
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    color: #d44860;
+                    text-shadow: 2px 2px 0 #7a9263;
+                    margin: 5px 0;
+                ">
+
+                    #EMPATIA<br>
+                    #RESPEITO<br>
+                    #AMOR
+
+                </p>
+
+            </div>
+
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+    </section>
+    <!-- SEPARADOR -->
+    <div style="
+        height: 40px;
+        background-color: #fff;
+    "></div>
+    <!-- TELA 2 - MENSAGENS -->  
+    <div id="tela-2" style="
+        padding: 60px 20px;
+        min-height: 700px;
+        position: relative;
+        overflow: hidden;
+        background-color: #fff3cd;
+    ">
+        <!-- IMAGEM DECORATIVA - ESQUERDA -->
+
+        <img src="/imagens/flor-amarelo-escuro.png"
+             alt="Flores"
+             style="
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                width: 200px;
+                height: auto;
+                z-index: 1;
+                pointer-events: none;
+             ">
+
+        <!-- IMAGEM DECORATIVA - DIREITA -->
+
+        <img src="/imagens/flor-amarelo-escuro.png"
+             alt="Ramo de flores"
+             style="
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                width: 220px;
+                height: auto;
+                z-index: 1;
+                pointer-events: none;
+             ">
+
+        <!-- CONTEÚDO DA TELA 2 -->
+
+        <div style="
+            max-width: 1100px;
+            min-height: 580px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        ">
+            <!-- TÍTULO -->
+
+            <h2 style="
+                font-size: 2rem;
+                color: #5a5a5a;
+                margin: 0 0 40px 0;
+                font-style: italic;
+            ">
+
+                Algumas mensagens:
+
+            </h2> 
+            <!-- RECADO 1 -->
+            <div style="
+                position: absolute;
+                top: 100px;
+                left: 40px;
+                background-color: #f2d479;
+                padding: 30px 25px;
+                width: 260px;
+                transform: rotate(-3deg);
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+                z-index: 3;
+            ">
+
+                <p style="
+                    font-size: 1.3rem;
+                    color: #333;
+                    line-height: 1.5;
+                    margin: 0;
+                ">
+
+                    Não se cobre<br>
+                    tanto. Você<br>
+                    está fazendo o<br>
+                    que consegue.
+
+                </p>
+
+            </div>
+
+            <!-- RECADO 2 -->
+            
+            <div style="
+                position: absolute;
+                top: 100px;
+                right: 60px;
+                background-color: #f2d479;
+                padding: 30px 25px;
+                width: 280px;
+                transform: rotate(2deg);
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+                z-index: 3;
+            ">
+
+                <p style="
+                    font-size: 1.3rem;
+                    color: #333;
+                    line-height: 1.5;
+                    margin: 0;
+                ">
+
+                    Você não precisa<br>
+                    passar por tudo<br>
+                    sozinho.<br>
+
+                    <strong>
+                        Ass: Victor
+                    </strong>
+
+                </p>
+
+            </div>
+           
+            <!-- RECADO 3 -->
+
+            <div style="
+                position: absolute;
+                bottom: 100px;
+                left: 220px;
+                background-color: #f2d479;
+                padding: 30px 25px;
+                width: 260px;
+                transform: rotate(-2deg);
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+                z-index: 3;
+            ">
+
+                <p style="
+                    font-size: 1.3rem;
+                    color: #333;
+                    line-height: 1.5;
+                    margin: 0;
+                ">
+
+                    Vá no seu ritmo.<br>
+                    Não existe pressa.<br>
+
+                    <strong>
+                        Ass: Júlio
+                    </strong>
+
+                </p>
+
+            </div>
+
+            <!-- BOTÃO VER MAIS -->
+            <div style="
+                position: absolute;
+                bottom: 40px;
+                right: 60px;
+                z-index: 4;
+            ">
+
+                <button onclick="mostrarTela3()" style="
+                    background-color: #8b5a2b;
+                    color: #fff;
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                    border: none;
+                    padding: 12px 30px;
+                    border-radius: 25px;
+                    cursor: pointer;
+                ">
+
+                    VER MAIS →
+
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

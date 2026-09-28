@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Um Cantinho Amarelo</title>
+    <link rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon/apple-touch-icon.png">
+
+    <link rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32/favicon-32x32.png">
+
+    <link rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16/favicon-16x16.png">
+
+
+    <meta name="description"
+        content="Um Cantinho Amarelo, um espaço acolhedor sobre saúde mental, bem-estar e qualidade de vida.">
+
+    <meta name="author" content="Um Cantinho Amarelo">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="apple-touch-icon"
+        sizes="180x180"
+        href="apple-touch-icon.png">
+
+    <link rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="favicon-32x32.png">
+
+    <link rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="favicon-16x16.png">
+
+
+    <style>
+
+        /* =========================
+           CONFIGURAÇÕES GERAIS
+        ========================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            background-color: white;
+        }
+
+
+        /* =========================
+           LIMITE DA CAPA
+        ========================= */
+
+        .capa {
+            width: 100%;
+            max-width: 1400px;
+            min-height: 850px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+
+        /* =========================
+           TÍTULOS
+        ========================= */
+
+        .titulo {
+            color: rgba(238, 214, 0, 0.979);
+            text-align: center;
+            font-size: 100px;
+            margin: 0;
+        }
+
+        .subtitulo {
+            color: black;
+            text-align: left;
+            font-size: 90px;
+            line-height: 1.05;
+            margin-top: 30px;
+        }
+
+
+        /* =========================
+           BOTÃO
+        ========================= */
+
+        .botao {
+            font-family: Tahoma, sans-serif;
+            background-color: rgba(238, 214, 0, 0.979);
+            color: black;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+
+        /* =========================
+           DECORAÇÕES
+        ========================= */
+
+        .vaso {
+            position: absolute;
+            width: 300px;
+            height: auto;
+            right: 0;
+            top: 500px;
+        }
+
+        .abelha {
+            position: absolute;
+            width: 300px;
+            height: auto;
+            right: 0;
+            top: 200px;
+        }
+
+        .girassol {
+            position: absolute;
+            width: 300px;
+            height: auto;
+            right: 300px;
+            top: 300px;
+        }
+
+        .flor-verde-1 {
+            position: absolute;
+            width: 300px;
+            height: auto;
+            left: -150px;
+            top: 0;
+        }
+
+        .flor-verde-2 {
+            position: absolute;
+            width: 300px;
+            height: auto;
+            left: 500px;
+            top: 700px;
+        }
+/*  RESPONSIVIDADE GERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="capa">
+
+        <!-- TÍTULO -->
+
+        <h1 class="titulo">
+            Um cantinho amarelo
+        </h1>
+
+
+        <!-- FRASE -->
+
+        <h2 class="subtitulo">
+            Quem bom <br>
+            ter você<br>
+            AQUI!
+        </h2>
+
+
+        <!-- VASO -->
+
+        <img
+            src="/imagens/Vaso de flores.png"
+            alt="Vaso de flores"
+            class="vaso"
+        >
+
+
+        <!-- ABELHA -->
+
+        <img
+            src="/imagens/abelha.png"
+            alt="Abelha"
+            class="abelha"
+        >
+
+
+        <!-- GIRASSOL -->
+
+        <img
+            src="/imagens/girassol.png"
+            alt="Girassol"
+            class="girassol"
+        >
+
+
+        <!-- FLOR VERDE -->
+
+        <img
+            src="/imagens/flor-papel-verde.png"
+            alt="Flor de papel verde"
+            class="flor-verde-1"
+        >
+
+
+        <img
+            src="/imagens/flor-papel-verde.png"
+            alt="Flor de papel verde"
+            class="flor-verde-2"
+        >
+
+
+        <!-- BOTÃO -->
+
+        <div
+            style="
+                position: absolute;
+                left: 30px;
+                bottom: 40px;
+            "
+        >
+
+            <a
+                href="cantinho.html"
+                class="botao"
+                title="Conhecer o Cantinho Amarelo"
+            >
+                Conhecer cantinho
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- DADOS ESTRUTURADOS -->
+
+    <script type="application/ld+json">
+
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Um Cantinho Amarelo",
+        "description": "Um espaço acolhedor sobre saúde mental, bem-estar e qualidade de vida.",
+        "inLanguage": "pt-BR"
+    }
+
+    </script>
+
+</body>
+
+</html>
+

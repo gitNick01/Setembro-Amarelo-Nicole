@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contato - Entre nós</title>
+    <link rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon/apple-touch-icon.png">
+
+    <link rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32/favicon-32x32.png">
+
+    <link rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16/favicon-16x16.png">
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffff;
+            min-height: 100vh;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* CABEÇALHO */
+
+        header {
+            width: 100%;
+            background-color: #f2d876;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #90992c;
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        /* NAVEGAÇÃO */
+
+        nav {
+            width: 100%;
+            background-color: #f2d876;
+            padding: 12px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #2c2c2c;
+            margin: 0 18px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #8b5a2b;
+        }
+
+        /* CONTEÚDO PRINCIPAL */
+
+        .conteudo {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 40px;
+        }
+
+        /* TÍTULO */
+
+        .titulo {
+            font-size: 56px;
+            line-height: 1.2;
+            color: #222;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .subtitulo {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 50px;
+        }
+
+        /* ÁREA DO CONTATO */
+
+        .contato {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        /* TELEFONE */
+
+        .telefone-img {
+            width: 220px;
+            height: auto;
+            flex-shrink: 0;
+        }
+
+        /* INFORMAÇÕES */
+
+        .informacoes {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .caixa-numero {
+            background-color: #f9c80e;
+            width: 140px;
+            height: 140px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 56px;
+            font-weight: 900;
+            color: #222;
+
+            flex-shrink: 0;
+        }
+
+        .texto-cvv {
+            font-size: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* BOTÃO */
+
+        .botao-cvv {
+            display: inline-block;
+
+            margin-top: 25px;
+
+            background-color: #f9c80e;
+            border: none;
+
+            padding: 14px 35px;
+
+            font-size: 18px;
+            font-weight: 600;
+
+            color: #222;
+            text-decoration: none;
+
+            border-radius: 30px;
+
+            transition: background 0.2s;
+        }
+
+        .botao-cvv:hover {
+            background: #f7b800;
+        }
+
+        /* FRASE FINAL */
+
+        .frase-final {
+            font-size: 20px;
+            color: #333;
+            margin-top: 45px;
+        }
+
+        /* IMAGENS DECORATIVAS */
+
+        .decoracao {
+            position: absolute;
+            pointer-events: none;
+        }
+
+        .livro {
+            width: 280px;
+            right: 210px;
+            top: 150px;
+        }
+
+        .abelha {
+            width: 160px;
+            right: 40px;
+            top: 130px;
+        }
+
+        .flores-lado {
+            position: absolute;
+            top: 500px;
+            width: 400px;
+            right: 50px;
+          
+        }
+
+        /* RESPONSIVIDADE */
+
+        @media (max-width: 900px) {
+
+            .livro {
+                display: none;
+            }
+
+            .contato {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .informacoes {
+                flex-wrap: wrap;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+                font-size: 14px;
+            }
+
+            .conteudo {
+                padding: 40px 25px;
+            }
+
+            .titulo {
+                font-size: 40px;
+            }
+
+            .subtitulo {
+                font-size: 18px;
+            }
+
+            .telefone-img {
+                width: 180px;
+            }
+
+            .informacoes {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .flor-seca,
+            .flores-lado {
+                display: none;
+            }
+
+        }
+        /*  RESPONSIVIDADE GERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header>
+        <h1>Seja bem vindo!</h1>
+    </header>
+
+
+    <!-- NAVEGAÇÃO -->
+
+    <nav>
+
+        <a href="cantinho.html">CANTINHO</a>
+
+        <a href="pausa.html">UMA PAUSA</a>
+
+        <a href="escrevaeleia.html">MENSAGENS</a>
+
+        <a href="mural.html">NOSSO MURAL</a>
+
+        <a href="contato.html">ENTRE NÓS</a>
+        
+        <a href="conscientizacao.html">CONSIENTIZAÇÃO</a>
+
+    </nav>
+
+
+    <!-- CONTEÚDO -->
+
+    <main class="conteudo">
+
+        <h1 class="titulo">
+            E que tal<br>
+            colocar para<br>
+            fora?
+        </h1>
+
+        <p class="subtitulo">
+            Fale conosco, estamos aqui por você!
+        </p>
+
+
+        <!-- ÁREA DO CONTATO -->
+
+        <div class="contato">
+
+            <!-- TELEFONE -->
+
+            <img 
+                src="/imagens/telefone.png" 
+                alt="Telefone antigo" 
+                class="telefone-img"
+            >
+
+
+            <!-- INFORMAÇÕES DO CVV -->
+
+            <div>
+
+                <div class="informacoes">
+
+                    <div class="caixa-numero">
+                        188
+                    </div>
+
+                    <div class="texto-cvv">
+
+                        CVV - Centro de<br>
+                        Valorização da Vida<br>
+                        (gratuito e 100% sigiloso)
+
+                    </div>
+
+                </div>
+
+
+                <!-- BOTÃO -->
+
+                <a 
+                    href="https://www.cvv.org.br/" 
+                    target="_blank" 
+                    class="botao-cvv"
+                >
+                    Acessar o site do CVV
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- FRASE -->
+
+        <p class="frase-final">
+            Você não precisa das palavras perfeitas para pedir ajuda
+        </p>
+
+    </main>
+
+
+    <!-- IMAGENS DECORATIVAS -->
+
+    <img 
+        src="/imagens/livro-img.png" 
+        alt="Livro aberto" 
+        class="decoracao livro"
+    >
+
+    <img 
+        src="/imagens/abelha.png" 
+        alt="Abelha" 
+        class="decoracao abelha"
+    >
+
+    <img 
+        src="/imagens/ramo-rosa.png" 
+        alt="ramo azul" 
+        class="decoracao flores-lado"
+    >
+</body>
+</html>
